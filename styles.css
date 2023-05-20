@@ -128,8 +128,13 @@ header .personal-pfp {
   min-width: 80px;
 }
 
+.quick-start > button:hover {
+  transition: all 0.1s ease-in-out;
+  background-color: var(--brt-teal);
+}
+
 aside.sidebar {
-  font-family: 'Cute Font', cursive;
+  /* font-family: 'Cute Font', cursive; */
   font-size: 2rem;
   grid-row: 1 / 3;
   background-color: var(--teal);
@@ -203,7 +208,7 @@ aside div.utility-links {
 
 .sidebar-bottom img {
   display: block;
-  margin-top: 200px;
+  margin-top: 25px;
   max-width: 100%;
 }
 
@@ -309,6 +314,10 @@ a {
   display: flex;
   flex-direction: row;
   gap: 5px;
+}
+
+.user > p > span:first-child {
+  font-weight: bold;
 }
 
 .user > img {
