@@ -4,181 +4,193 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <header>
-      <container>
-        <button>Search</button>
-        <input type="search" />
-        <button>Notifs</button>
-        <img src="" alt="Profile Picture" />
-        <p>Name</p>
-      </container>
-      <container>
-        <div>
+    <div class="container">
+      <header class="top-header">
+        <div class="toolbar">
+          <button>Search</button>
+          <input type="search" />
+          <button>Notifs</button>
           <img src="" alt="Profile Picture" />
-          <p>Hi there,</p>
-          <p>Will <span>@will</span></p>
+          <p>Name</p>
         </div>
-        <div>
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>
-        </div>
-      </container>
-    </header>
-
-    <aside class="sidebar">
-      <nav class="menu">
-        <a>
-          <img src="" alt="" />
-          <span>Home</span>
-        </a>
-        <a>
-          <img src="" alt="" />
-          <span>Profile</span>
-        </a>
-        <a>
-          <img src="" alt="" />
-          <span>Messages</span>
-        </a>
-        <a>
-          <img src="" alt="" />
-          <span>History</span>
-        </a>
-        <a>
-          <img src="" alt="" />
-          <span>Tasks</span>
-        </a>
-        <a>
-          <img src="" alt="" />
-          <span>Communities</span>
-        </a>
-      </nav>
-
-      <div class="utility-links">
-        <a>
-          <img src="" alt="" />
-          <span>Settings</span>
-        </a>
-        <a>
-          <img src="" alt="" />
-          <span>Support</span>
-        </a>
-        <a>
-          <img src="" alt="" />
-          <span>Privacy</span>
-        </a>
-      </div>
-    </aside>
-
-    <main>
-      <section class="projects">
-        <p>Your Projects</p>
-        <div class="card">
-          <p>Super Cool Project</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in
-            arcu cursus euismod quis viverra nibh. Montes nascetur ridiculus mus
-            mauris vitae ultricies leo.
-          </p>
-        </div>
-        <div class="card">
-          <p>Less Cool Project</p>
-          <p>
-            Id donec ultrices tincidunt arcu non sodales neque sodales. Mauris
-            nunc congue nisi vitae suscipit tellus. Imperdiet proin fermentum
-            leo vel orci porta non.
-          </p>
-        </div>
-        <div class="card">
-          <p>Less Cool Project</p>
-          <p>
-            Magna eget est lorem ipsum dolor sit. Et malesuada fames ac turpis.
-            Turpis in eu mi bibendum. Ut placerat orci nulla pellentesque
-            dignissim. Vitae turpis massa sed elementum tempus egestas. Nisi
-            lacus sed viverra tellus in hac habitasse.
-          </p>
-        </div>
-        <div class="card">
-          <p>Less Cool Project</p>
-          <p>
-            Ante metus dictum at tempor. Habitasse platea dictumst vestibulum
-            rhoncus est pellentesque elit. Etiam tempor orci eu lobortis
-            elementum nibh tellus molestie nunc.
-          </p>
-        </div>
-        <div class="card">
-          <p>Less Cool Project</p>
-          <p>
-            Metus aliquam eleifend mi in. Rhoncus mattis rhoncus urna neque.
-            Quisque egestas diam in arcu cursus euismod quis viverra. Placerat
-            duis ultricies lacus sed turpis tincidunt id aliquet risus. Quam
-            quisque id diam vel quam.
-          </p>
-        </div>
-        <div class="card">
-          <p>Less Cool Project</p>
-          <p>
-            Neque convallis a cras semper auctor neque vitae. Imperdiet proin
-            fermentum leo vel orci porta non pulvinar neque. Laoreet sit amet
-            cursus sit amet.
-          </p>
-        </div>
-      </section>
-
-      <aside>
-        <section class="announcements">
-          <p>Announcements</p>
-          <div class="announcement-post">
-            <p>Site Maintenance</p>
-            <p>
-              Tellus pellentesque eu tincidunt tortor aliquam. Dictum varius
-              duis at consectetur lorem donec massa sapien.
-            </p>
+        <div class="user-dashboard">
+          <div>
+            <img src="" alt="Profile Picture" />
+            <p>Hi there,</p>
+            <p>Will <span>@will</span></p>
           </div>
-          <div class="announcement-post">
-            <p>Community Share Day</p>
-            <p>
-              Sem et tortor consequat id porta nibh venenatis. Pretium nibh
-              ipsum consequat nisl. Et tortor consequat id porta nibh.
-            </p>
+          <div class="quick-start">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
           </div>
-          <div class="announcement-post">
-            <p>Updated Privacy Policy</p>
-            <p>
-              Sem et tortor consequat id porta nibh venenatis. Pretium nibh
-              ipsum consequat nisl.
-            </p>
-          </div>
-        </section>
+        </div>
+      </header>
 
-        <section class="trending">
-          <p>Trending</p>
-          <a>
-            <img src="" alt="Profile Picture" />
-            <span>@tegan</span>
-            <span>World Peace Builder</span>
+      <aside class="sidebar">
+        <nav class="menu">
+          <a class="logo">
+            <img src="" alt="Logo" />
+            <span><h1>Dashboard</h1></span>
           </a>
           <a>
-            <img src="" alt="Profile Picture" />
-            <span>@will</span>
-            <span>Hello Worlder</span>
+            <img src="" alt="" />
+            <span>Home</span>
           </a>
           <a>
-            <img src="" alt="Profile Picture" />
-            <span>@kendall</span>
-            <span>Life Changing App</span>
+            <img src="" alt="" />
+            <span>Profile</span>
           </a>
           <a>
-            <img src="" alt="Profile Picture" />
-            <span>@alex</span>
-            <span>No Traffic Maker</span>
+            <img src="" alt="" />
+            <span>Messages</span>
           </a>
-        </section>
+          <a>
+            <img src="" alt="" />
+            <span>History</span>
+          </a>
+          <a>
+            <img src="" alt="" />
+            <span>Tasks</span>
+          </a>
+          <a>
+            <img src="" alt="" />
+            <span>Communities</span>
+          </a>
+        </nav>
+
+        <div class="utility-links">
+          <a>
+            <img src="" alt="" />
+            <span>Settings</span>
+          </a>
+          <a>
+            <img src="" alt="" />
+            <span>Support</span>
+          </a>
+          <a>
+            <img src="" alt="" />
+            <span>Privacy</span>
+          </a>
+        </div>
       </aside>
-    </main>
+
+      <main>
+        <section class="projects">
+          <h2>Your Projects</h2>
+          <div class="card">
+            <p>Super Cool Project</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
+              in arcu cursus euismod quis viverra nibh. Montes nascetur
+              ridiculus mus mauris vitae ultricies leo.
+            </p>
+          </div>
+          <div class="card">
+            <p>Less Cool Project</p>
+            <p>
+              Id donec ultrices tincidunt arcu non sodales neque sodales. Mauris
+              nunc congue nisi vitae suscipit tellus. Imperdiet proin fermentum
+              leo vel orci porta non.
+            </p>
+          </div>
+          <div class="card">
+            <p>Less Cool Project</p>
+            <p>
+              Magna eget est lorem ipsum dolor sit. Et malesuada fames ac
+              turpis. Turpis in eu mi bibendum. Ut placerat orci nulla
+              pellentesque dignissim. Vitae turpis massa sed elementum tempus
+              egestas. Nisi lacus sed viverra tellus in hac habitasse.
+            </p>
+          </div>
+          <div class="card">
+            <p>Less Cool Project</p>
+            <p>
+              Ante metus dictum at tempor. Habitasse platea dictumst vestibulum
+              rhoncus est pellentesque elit. Etiam tempor orci eu lobortis
+              elementum nibh tellus molestie nunc.
+            </p>
+          </div>
+          <div class="card">
+            <p>Less Cool Project</p>
+            <p>
+              Metus aliquam eleifend mi in. Rhoncus mattis rhoncus urna neque.
+              Quisque egestas diam in arcu cursus euismod quis viverra. Placerat
+              duis ultricies lacus sed turpis tincidunt id aliquet risus. Quam
+              quisque id diam vel quam.
+            </p>
+          </div>
+          <div class="card">
+            <p>Less Cool Project</p>
+            <p>
+              Neque convallis a cras semper auctor neque vitae. Imperdiet proin
+              fermentum leo vel orci porta non pulvinar neque. Laoreet sit amet
+              cursus sit amet.
+            </p>
+          </div>
+        </section>
+
+        <aside class="sub-topics">
+          <section class="announcements">
+            <h2>Announcements</h2>
+            <div class="posts-container">
+              <div class="post">
+                <p>Site Maintenance</p>
+                <p>
+                  Tellus pellentesque eu tincidunt tortor aliquam. Dictum varius
+                  duis at consectetur lorem donec massa sapien.
+                </p>
+              </div>
+              <div class="post">
+                <p>Community Share Day</p>
+                <p>
+                  Sem et tortor consequat id porta nibh venenatis. Pretium nibh
+                  ipsum consequat nisl. Et tortor consequat id porta nibh.
+                </p>
+              </div>
+              <div class="post">
+                <p>Updated Privacy Policy</p>
+                <p>
+                  Sem et tortor consequat id porta nibh venenatis. Pretium nibh
+                  ipsum consequat nisl.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="trending">
+            <h2>Trending</h2>
+            <div class="users-container">
+              <a class="user">
+                <img src="" alt="Profile Picture" />
+                <span>@tegan</span>
+                <span>World Peace Builder</span>
+              </a>
+              <a class="user">
+                <img src="" alt="Profile Picture" />
+                <span>@will</span>
+                <span>Hello Worlder</span>
+              </a>
+              <a class="user">
+                <img src="" alt="Profile Picture" />
+                <span>@kendall</span>
+                <span>Life Changing App</span>
+              </a>
+              <a class="user">
+                <img src="" alt="Profile Picture" />
+                <span>@alex</span>
+                <span>No Traffic Maker</span>
+              </a>
+            </div>
+            </div>
+          </section>
+        </aside>
+      </main>
+    </div>
   </body>
 </html>

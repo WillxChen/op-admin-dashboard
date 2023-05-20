@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+header.top-header {
+  background-color: #DAFDBA;
+  grid-column: 2 / 3;
+}
+
+aside.sidebar {
+  grid-row: 1 / 3;
+  background-color: #008F8C;
+  color: #C7FFED;
+}
+
+aside.sidebar .logo {
+  background-color: #015958;
+  color: #D8FFDB;
+}
+
+aside nav.menu {
+  display: grid;
+}
+
+aside div.utility-links {
+ display: grid;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  background-color: #9AEBA3;
+}
+
+section.projects {
+  display: grid;
+  margin-left: 25px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+}
+
+section.projects h2 {
+  display: grid;
+  margin-bottom: 0;
+  margin-bottom: -10px;
+  align-self: end;
+  grid-column: 1 / -1;
+  
+}
+
+section.projects .card {
+  border-radius: 10px;
+  border-left: 5px solid #45C4B0;
+  background-color: #DAFDBA;
+}
+
+aside.sub-topics {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+aside.sub-topics h2 {
+  display: grid;
+  margin-bottom: 10px;
+  align-self: end;
+}
+
+section.announcements {
+  display: grid;
+  grid-template-rows: auto repeat(auto-fit, 200px);
+}
+
+section.announcements .posts-container {
+  border-radius: 10px;
+  background-color: #D8FFDB;
+  padding: 10px 40px;
+}
+
+section.announcements .post:after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 90%; /* Change this to whatever width you want. */
+  border-bottom: 1px solid black;
+}
+
+section.announcements .post:last-child:after {
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+div.post p:first-child {
+  color: #023535;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+div.post p:nth-child(2) {
+  margin-top: 0px;
+}
+
+section.trending {  
+}
+
+section.trending .users-container {
+  display: grid;
+  grid-template-rows: auto repeat(auto-fit, 200px);
+  border-radius: 10px;
+  background-color: #D8FFDB;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+aside.sub-topics {
+  margin: auto 25px;
+}
